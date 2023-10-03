@@ -4,15 +4,15 @@ name: My-GitHubAction-Basics
 env:
  
      APPLIVATION_NAME: "MyFlask"
-     DEPLOY_PACKAGE_NAME: "flask-deploy-ver-${{ github.sha }}
+     DEPLOY_PACKAGE_NAME: "flask-deploy-ver-${{ github.sha }}"
 
 on:
      push        :
      pull_request:
-     branches    : -master
+      branches    : -master
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+     workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
