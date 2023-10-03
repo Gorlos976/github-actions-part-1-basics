@@ -67,7 +67,7 @@ jobs:
         run: |
          echo "VAR1-${{env.VAR1}}"
          echo "VAR2-${{env.VAR2}}"
-         echo "VAR3-$"Local_var"
+         echo "VAR3-$Local_var"
         env:
           Local_var: "This is Superr local Enviroment varibale"
         
