@@ -3,21 +3,18 @@
 #
 #Copyleft (c) by Denis Astahov 2019
 #------------------------
-Исправленный файл my-basic.yml без использования неправильных символов и тегов от Google:
-
 name: My-GitHubAction-Basics
 on:
   push:
     branches:
-      master
-jobs:
+     -master
   my_testing:
     runs-on: ubuntu-latest
     steps:
       name: Print Hello Message
-        run: echo "Hello world from Testing job"
+        run: echo "Hello world from Testing"
   my_deploy:
     runs-on: ubuntu-latest
     steps:
       name: Print Hello Message
-        run: echo "Hello world from Deploy job"
+        run: echo "Hello world from Deploy"
