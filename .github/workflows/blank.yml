@@ -32,6 +32,12 @@ jobs:
          echo "Application name: ${{env.APPLIVATION_NAME }}"
       - name: List current foldor 
         run:  ls -la
+
+      - name: git clone my repo 
+        uses: actions/sheckout@v1
+
+      - name: List current foldor 
+        run:  ls -la
       # Runs a set of commands using the runners shell
       - name: Print Hello Message
         run: echo "Hello world from Deploy job" 
@@ -53,4 +59,8 @@ jobs:
         
       - name: Printing Deploy package
         run : echo "Deploy package name is ${{env.DEPLOY_PACKAGE_NAME}}"
-              
+      - name: Let's test some packages iof the are here 1
+        run: aws --version
+        
+      - name: Let's test some packages iof the are here 2
+        run: aws --zip      
