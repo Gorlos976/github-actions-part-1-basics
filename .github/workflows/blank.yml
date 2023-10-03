@@ -67,9 +67,9 @@ jobs:
         run: |
          echo "VAR1-${{env.VAR1}}"
          echo "VAR2-${{env.VAR2}}"
-         echo "VAR3-$lOCAL_VAR"
+         echo "VAR3-$LOCAL_VAR"
         env:
-          Local_var: "this ih Superr local Enviroment varibale"
+          Local_var: "This is Superr local Enviroment varibale"
         
      # Runs a set of commands using the runners shell
       - name: Print Hello Message in Deploy
