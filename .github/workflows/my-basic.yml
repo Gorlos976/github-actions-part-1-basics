@@ -3,17 +3,20 @@
 #
 #Copyleft (c) by Denis Astahov 2019
 #------------------------
-name: MyGitHubActionBasics
+name: My-GitHubAction-Basics
+
 on:
   push:
     branches:
       - master
+
 jobs:
   my_testing:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello Message
         run: echo "Hello world from Testing"
+
   my_deploy:
     runs-on: ubuntu-latest
     steps:
