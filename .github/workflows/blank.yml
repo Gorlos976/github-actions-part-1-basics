@@ -30,7 +30,8 @@ jobs:
          echo "Hello Messege1"
          echo "Hello Messege1"
          echo "Application name: ${{env.APPLIVATION_NAME }}"
-
+      - name: List current foldor 
+        run:  ls -la
       # Runs a set of commands using the runners shell
       - name: Print Hello Message
         run: echo "Hello world from Deploy job" 
