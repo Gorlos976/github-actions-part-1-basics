@@ -10,19 +10,19 @@ on:
   push:
     branches:
       -master
-
-  jobs: 
-  
-  my_testing:
+      
+      jobs:
+     
+ my_testing:
      runs-on: ubuntu-latest
      
-  steps: 
+    steps: 
        -name: Print Hello Messege
        run: echo "Hello world from Testing job"
-
-  my_deploy:
+ my_deploy:
        
        runs-on: ubuntu latest.
+       
        steps: 
        -name: Print Hello Messege
        run: echo "Hello,world from Deploy job!"
